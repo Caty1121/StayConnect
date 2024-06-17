@@ -1,8 +1,50 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
+/* Reset some default browser styles */
+body, ul {
+    margin: 0;
+    padding: 0;
 }
-h1 {
-    color: #333;
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Style the navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the list of links */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Style the individual links */
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for links */
+.nav-list a:hover {
+    background-color: #575757;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
 }
