@@ -1,16 +1,17 @@
-
+body {
+    background-color: #303C6C;
+    color: #dff1f2;
+}
 body, ul {
     margin: 0;
     padding: 0;
     font-family: "DM Sans", sans-serif;
     list-style-type: none;
 }
-
 header {
-    background-color: #5C2018;
-    color: #fff;
+    background-color: #B4DFE5;
+    color: black;
     font-size: 20px;
-    font-weight: 700px;
 }
 #logo {
     height: 5vh;
@@ -19,7 +20,6 @@ nav {
     display: flex;
     justify-content:left;
 }
-
 .nav-list {
     list-style-type: none;
     display: flex;
@@ -28,19 +28,22 @@ nav {
     padding-left: 40em ;
     padding-bottom: .5em;
     text-align: start;
-}
+    font-weight: 800px;
 
+}
 .nav-list a {
-    color: #F3E0DC;
+    color: #303C6C;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
-
 .nav-list a:hover {
-    background-color: #D4A59A;
-    padding: 1em;
-}
+    background-color: #FBE8A6;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: .75em;
 
+}
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
@@ -51,29 +54,31 @@ nav {
         align-items: center;
     }
 }
-#gamer-ladies, #man-on-bench, #couple-zooming, #social-lady,
-#team-image, #mission, #join-us,
+ #man-on-bench, #couple-zooming, #social-lady,
+#team-image,  #join-us,
 #friends, #couple-waving, #internet,
 #waving, #scam, #privacy,
 #resources-intro, #discussion,
-#community-discussion, #get-started 
-{
+#community-discussion, #get-started {
     height: 75vh;
+    width: auto;
+}
+#gamer-ladies, #mission, #vr-lady {
+    height:50vh;
     width: auto;
 }
 button {
     padding: .75em;
-    background-color: #4285F4;
-    color: #F3E0DC;
+    background-color: #F4976C;
+    color: #0a042d;
     font-weight: 700;
-    border-color: #073f9a;
-    border-radius: 5%;
-
+    border-radius: 30px;
+    border-color: #bc643b;
 }
 .call-to-action {
     color:F7F9FB;
-    background: #BC4639;
-    color: #dce2f3;
+    background: #D2FDFF;
+    color: #151312;
     padding: 2em;
 }
 .featured-content-list {
@@ -81,7 +86,6 @@ button {
     align-items: center;
     padding: 1em;
 }
-
 .title {
     text-align: center;
 }
@@ -90,4 +94,15 @@ article, section {
 }
 .call-button {
     align-items: center;
+}
+#log-in-form {
+    display: flex;
+    justify-content: center;
+    background-color: #F3E0DC;
+    margin: 20%;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+.log-in-form-section {
+    padding:1em;
 }
