@@ -1,43 +1,42 @@
-/* Reset some default browser styles */
+
 body, ul {
     margin: 0;
     padding: 0;
 }
 
-/* Style the header */
 header {
-    background-color: #333;
+    background-color: Dark Maroon;
     color: #fff;
-    padding: 10px 0;
 }
 
-/* Style the navigation bar */
 nav {
     display: flex;
     justify-content: center;
+    background-color: #5C2018;
+
 }
 
-/* Style the list of links */
 .nav-list {
     list-style-type: none;
     display: flex;
     gap: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
-/* Style the individual links */
 .nav-list a {
-    color: #fff;
+    color: #F3E0DC;
     text-decoration: none;
-    padding: 10px 20px;
     transition: background-color 0.3s ease;
+
 }
 
-/* Add hover effect for links */
 .nav-list a:hover {
-    background-color: #575757;
+    background-color: #D4A59A;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
@@ -47,4 +46,23 @@ nav {
         flex-direction: column;
         align-items: center;
     }
+}
+#gamer-ladies, #man-on-bench, #couple-zooming, #social-lady,
+#team-image, #mission, #join-us,
+#friends, #couple-waving, #internet,
+#waving, #scam, #privacy 
+{
+    height: 75vh;
+    width: auto;
+}
+button {
+    padding: .75em;
+    background-color: #4285F4;
+    color: #F3E0DC;
+    font-weight: 700;
+}
+.call-to-action {
+    color:F7F9FB;
+    background: #BC4639;
+    padding: 2em;
 }
