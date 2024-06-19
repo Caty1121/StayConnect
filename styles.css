@@ -86,8 +86,8 @@ article, section {
     font-size: 18px;
 }
 #gamer-ladies {
-    height:70vh;
-    width: auto;
+    height:auto;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
