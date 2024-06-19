@@ -8,8 +8,8 @@ body, ul {
     list-style-type: none;
 }
 header, footer {
-    background-color: #040d48;
-    color: rgb(249, 245, 245);
+    /*background-color: #040d48; */
+    color: rgb(25, 18, 18);
     font-size: 20px;
 }
 #logo {
@@ -105,7 +105,7 @@ button {
     text-align: center;
     margin:0;
 }
-.welcome, .title, .blog-latest, .featured-content-title,
+ .title, .blog-latest, .featured-content-title,
 #about {
     text-align: center;
 }
