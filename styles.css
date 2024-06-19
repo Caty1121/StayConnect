@@ -5,8 +5,7 @@ body, html {
 body {
     background-image: url("images/background.png");
     background-repeat: no-repeat;
-    background-color: cover;
-    background-position: right;
+    background-size: cover;
     background-color: #fdfde8;
     color: rgb(25, 18, 18) !important;
     font-family: "Lora", serif;
@@ -70,6 +69,7 @@ nav {
     align-items: center;
     max-width: 100%;
 }
+
   
 #friends, #couple-waving, #internet,
 #waving, #scam, #privacy,
