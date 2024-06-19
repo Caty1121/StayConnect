@@ -1,3 +1,14 @@
+:root {
+    --color-primary: #0a6bb1;
+    --color-secondary: #fb8209;
+    --color-accent: #7fc15d;
+    --color-headings: #080708;
+    --color-body: #918ca4;
+    --color-body-darker: #5c5577;
+    --color-border: #ccc;
+    --border-radius: 30px;
+  }
+
 body, html {
     height: 100%; 
     margin: 0; 
@@ -6,8 +17,7 @@ body {
     background-image: url("images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #fdfde8;
-    color: rgb(25, 18, 18) !important;
+    color: black;
     font-family: "Lora", serif;
     font-optical-sizing: auto;
 }
@@ -63,7 +73,7 @@ nav {
     }
 }
 #man-on-bench, #couple-zooming, #social-lady {
-    height: 100vh;
+    height: 80vh;
     width: auto;
     justify-content: center;
     align-items: center;
@@ -87,7 +97,7 @@ article, section {
 }
 #gamer-ladies {
     height:auto;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
