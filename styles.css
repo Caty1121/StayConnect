@@ -3,8 +3,8 @@
     --color-secondary: #fb8209;
     --color-accent: #7fc15d;
     --color-headings: #080708;
-    --color-body: #918ca4;
-    --color-body-darker: #5c5577;
+    --color-body: #ee448e;
+    --color-body-darker: #24bdb0;
     --color-border: #ccc;
     --border-radius: 30px;
   }
@@ -32,6 +32,21 @@ header, footer {
 #logo {
     height: 8vh;
 }
+button {
+    padding: 1em;
+    background-color: #fb8209;
+    color: #010003;
+    font-weight: 700;
+    border-radius: 25px;
+    border-color: #f67606;
+    font: 25px;
+    margin-left: 10%;
+    font-size: 18px;
+}
+button:hover {
+    background-color: var(--color-body)
+}
+
 nav {
     display: flex;
     justify-content:left;
@@ -73,7 +88,7 @@ nav {
     }
 }
 #man-on-bench, #couple-zooming, #social-lady {
-    height: 80vh;
+    max-height: 80vh;
     width: auto;
     justify-content: center;
     align-items: center;
@@ -81,7 +96,7 @@ nav {
 }
 
   
-#friends, #couple-waving, #internet,
+#couple-waving, #internet,
 #waving, #scam, #privacy,
 #resources-intro, #discussion,
 #community-discussion, #get-started {
@@ -103,15 +118,6 @@ article, section {
     align-items: center;
     max-width: 100%;
 }
-button {
-    padding: 1em;
-    background-color: #fb8209;
-    color: #010003;
-    font-weight: 700;
-    border-radius: 25px;
-    border-color: #f67606;
-    font: 25px;
-}
 .call-to-action {
     font-family: "Poetsen One", sans-serif;
     font-size: 25px;
@@ -120,6 +126,7 @@ button {
     color: #151312;
     margin-left: 8em;
     margin-right: 10em;
+    margin-bottom: 1em;
 }
 .featured-content-list {
     padding-left: 1.5em;

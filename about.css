@@ -4,11 +4,6 @@
 #main-content-about {
     text-align: center;
 }
-
-button {
- margin-left: 10%;
- font-size: 18px;
-}
 #grid-contents {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns */

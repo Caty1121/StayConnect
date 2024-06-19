@@ -2,12 +2,11 @@
     padding: 2em 10%;
     text-align: center;
 }
-.main-content img {
+#friends {
     max-width: 100%;
-    height: auto;
-    margin-bottom: 1em;
+    width:100%;
+    height:auto;
 }
-
 
 p {
     font-size: 18px;
@@ -71,10 +70,6 @@ button {
     transition: background-color 0.3s ease;
 }
 #tech-cta {
-    margin-left: 10%;
-    Margin-right:20%;
+    margin-left: 10em;
     padding-bottom: 3em;
-}
-button:hover {
-    background-color: #f67606;
 }
