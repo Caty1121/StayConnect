@@ -1,0 +1,18 @@
+.log-in-form-section {
+    padding: 1em;
+}
+#log-in-form {
+    display: flex;
+    justify-content: center;
+    background-color: #0a6bb1;
+    margin: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#join-us {
+    height: 75vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}

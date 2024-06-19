@@ -70,8 +70,7 @@ nav {
     align-items: center;
     max-width: 100%;
 }
-
-#team-image,  #join-us,
+  
 #friends, #couple-waving, #internet,
 #waving, #scam, #privacy,
 #resources-intro, #discussion,
@@ -109,7 +108,6 @@ button {
     font-weight: 200;
     font-style: normal;
     color: #151312;
-    padding: 1em;
     margin-left: 8em;
     margin-right: 10em;
 }
@@ -136,22 +134,11 @@ button {
 .call-button {
     align-items: center;
 }
-#log-in-form {
-    display: flex;
-    justify-content: center;
-    background-color: #D2FDFF;
-    opacity: .8;
-    margin: 20%;
-    margin-top: 10%;
-    border-radius: 15px;
-}
+
 section.main-content {
     padding: 0;
 }
-.log-in-form-section {
-    padding:1em;
-    box-shadow: 5px 5px 5px #434343;
-}
+
 .digital-comp-list {
     background-color: #0a6bb1;
     color:rgb(242, 245, 214);
