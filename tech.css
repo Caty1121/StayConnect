@@ -7,11 +7,9 @@
     width:100%;
     height:auto;
 }
-
-p {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 1em 0;
+#tech-cta {
+    margin-left: 10em;
+    padding-bottom: 3em;
 }
 
 #free-tutorials {
@@ -32,44 +30,40 @@ p {
 h2 {
     font-family: "Poetsen One", sans-serif;
 }
-#free-tutorials div a {
-    display: block;
+#free-tutorials {
+    display: flex;
     font-size: 22px;
     font-weight: 600;
     margin: 0.5em 0;
     color: black;
     text-decoration: none;
     transition: color 0.3s ease;
-    padding-left: 1em;
+    display: flex;
 }
 #free-tutorials div a:hover {
     color: #fb8209;
 }
-.chat-apps {
-    list-style-type: none;
-    padding: 0;
-}
-.chat-apps li {
-    font-size: 18px;
-    margin: 1em 0;
-}
 .chat-apps strong {
     display: block;
+    flex:1;
     font-size: 20px;
     color: #0a6bb1;
     margin-bottom: 0.5em;
+    opacity: .7;
+    flex: 1;
+    text-align: left;
 }
-button {
-    background-color: #fb8209;
-    color: #010003;
-    font-weight: 700;
-    border-radius: 25px;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.waving img {
+    flex: 1;
+    max-width: auto;
+    height: 75vh;
 }
-#tech-cta {
-    margin-left: 10em;
-    padding-bottom: 3em;
+h3, h4 {
+    color:black;
+    text-decoration: none;
+}
+#featured-title {
+    background-color: #0a6bb1;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }

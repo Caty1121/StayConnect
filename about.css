@@ -6,12 +6,12 @@
 }
 #grid-contents {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    grid-template-rows: auto auto auto; /* Three rows, auto-sized */
-    gap: 20px; /* Space between items */
-    padding: 20px; /* Padding around the grid */
-    max-width: 1200px; /* Max width of the grid container */
-    margin: 0 auto; /* Center the grid container */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto; 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #grid-contents img {
