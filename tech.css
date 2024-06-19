@@ -1,10 +1,6 @@
-
 .main-content {
     padding: 2em 10%;
     text-align: center;
-}
-#tech-cta {
-    background-color: bisque;
 }
 .main-content img {
     max-width: 100%;
@@ -43,7 +39,6 @@ p {
 h2 {
     font-family: "Poetsen One", sans-serif;
 }
-
 #free-tutorials div a {
     display: block;
     font-size: 22px;
@@ -54,28 +49,23 @@ h2 {
     transition: color 0.3s ease;
     padding-left: 1em;
 }
-
 #free-tutorials div a:hover {
     color: #fb8209;
 }
-
 .chat-apps {
     list-style-type: none;
     padding: 0;
 }
-
 .chat-apps li {
     font-size: 18px;
     margin: 1em 0;
 }
-
 .chat-apps strong {
     display: block;
     font-size: 20px;
     color: #0a6bb1;
     margin-bottom: 0.5em;
 }
-
 button {
     padding: 1em;
     background-color: #fb8209;
@@ -88,7 +78,11 @@ button {
     margin: 2em 0;
     transition: background-color 0.3s ease;
 }
-
+#tech-cta {
+    margin-left: 10%;
+    Margin-right:20%;
+    padding-bottom: 3em;
+}
 button:hover {
     background-color: #f67606;
 }
