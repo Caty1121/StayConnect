@@ -93,7 +93,7 @@ nav {
     }
 }
 #man-on-bench, #couple-zooming, #social-lady {
-    max-height: 80vh;
+    height: 75vh;
     width: auto;
     justify-content: center;
     align-items: center;

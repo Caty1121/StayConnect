@@ -1,0 +1,47 @@
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap:2em;
+}
+
+.main-content h5 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-left: 3em;
+
+}
+
+.main-content p {
+    grid-column: 1 / -1;
+    text-align: center;
+
+}
+
+.main-content ul {
+    grid-column: 1 / 2;
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-content ul li {
+    margin-bottom: 10px;
+    margin-left: 3em;
+}
+
+.main-content img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+#scam {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+#waving {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
