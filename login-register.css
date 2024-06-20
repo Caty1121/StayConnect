@@ -5,8 +5,8 @@
     display: flex;
     justify-content: center;
     background-color: #0a6bb1;
-    margin: 20%;
-    margin-top: 10%;
+    margin: 26%;
+    margin-top: 10em;
     margin-bottom: 10%;
 }
 #join-us {
@@ -22,4 +22,10 @@ p, a {
 
 #log-in {
     margin-left: 6em;
+}
+.title{
+    padding-left: 1em;
+}
+a{
+    color: #7fc15d;
 }

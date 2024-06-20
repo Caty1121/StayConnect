@@ -66,3 +66,6 @@ h3, h4 {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+.lower-content {
+    padding:2em;
+}
