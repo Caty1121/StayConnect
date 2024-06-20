@@ -48,7 +48,7 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
-ul, h3, h4 {
+.main-content, .scam-awareness {
     font-size: 25px;
 }
 
