@@ -8,7 +8,6 @@
     --color-border: #ccc;
     --border-radius: 30px;
   }
-
 body, html {
     height: 100%; 
     margin: 0; 
@@ -20,6 +19,8 @@ body {
     color: black;
     font-family: "Lora", serif;
     font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 30px;
 }
 body, ul {
     margin: 0;
@@ -35,7 +36,7 @@ header, footer {
 button {
     padding: 1em;
     background-color: #fb8209;
-    color: #010003;
+    color: black;
     font-weight: 700;
     border-radius: 25px;
     border-color: #f67606;
@@ -46,30 +47,31 @@ button {
 button:hover {
     background-color: var(--color-body)
 }
-
 nav {
     display: flex;
     justify-content:left;
+    opacity: .7;
+    background-color:#0b5deb;
 }
 .nav-list {
     list-style-type: none;
     display: flex;
     gap: 18px;
     padding-top: .75em;
-    padding-left: 40em ;
+    padding-left: 20em;
     padding-bottom: .75em;
     text-align: start;
-    font-weight: 800px;
+    font-weight: 850px;
 }
 .nav-list a {
-    color: #121212;
-    font-weight: 700;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    color: rgb(244, 225, 225);
+    font-weight: 800;
 }
 .nav-list a:hover {
-    background-color: #7fc15d;
-    color: #0a042d;
+    background-color: #f67606;
+    color:black;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: .5em;
@@ -95,7 +97,6 @@ nav {
     max-width: 100%;
 }
 
-  
 #internet,
 #waving, #scam, #privacy,
 #resources-intro, #discussion,
@@ -119,14 +120,20 @@ article, section {
     max-width: 100%;
 }
 .call-to-action {
-    font-family: "Poetsen One", sans-serif;
-    font-size: 25px;
-    font-weight: 200;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-style: normal;
     color: #151312;
-    margin-left: 8em;
-    margin-right: 10em;
-    margin-bottom: 1em;
+    padding-left: 8em;
+    padding-right: 10em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    background-color: #f4f6f3;
+    opacity: .8;
+}
+.call-to-action h2 {
+    font-size: 23px;
 }
 .featured-content-list {
     padding-left: 1.5em;

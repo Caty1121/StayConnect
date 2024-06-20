@@ -1,6 +1,3 @@
-#about-title {
-    padding-left: 1em;
-}
 #main-content-about {
     text-align: center;
 }
@@ -51,7 +48,6 @@
 #team-image {
     grid-column: 1 / 2; /* Position in the first column */
     grid-row: 3 / 4; /* Position in the third row */
-
 }
 
 #team {

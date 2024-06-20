@@ -14,32 +14,31 @@
 
 #free-tutorials {
     padding-top: 2em;
-    padding-bottom: 2em;    
     background-color: #0a6bb1;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-left: 15em;
     text-align: left;
+    display: flex;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    transition: color 0.3s ease;
+    display: flex;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+a {
+    text-decoration: none;
 }
 
 #free-tutorials h1 {
     color: #faf6f6;
     font-family: "Poetsen One", sans-serif;
     font-size: 30px;
+    
 }
 h2 {
     font-family: "Poetsen One", sans-serif;
 }
-#free-tutorials {
-    display: flex;
-    font-size: 22px;
-    font-weight: 600;
-    margin: 0.5em 0;
-    color: black;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    display: flex;
-}
+
 #free-tutorials div a:hover {
     color: #fb8209;
 }
