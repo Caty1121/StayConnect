@@ -13,7 +13,6 @@
 }
 
 #free-tutorials {
-    padding-top: 2em;
     background-color: #0a6bb1;
     text-align: left;
     display: flex;
@@ -30,14 +29,12 @@ a {
 }
 
 #free-tutorials h1 {
+    padding-top: 2em;
     color: #faf6f6;
     font-family: "Poetsen One", sans-serif;
-    font-size: 30px;
-    
+    font-size: 30px; 
 }
-h2 {
-    font-family: "Poetsen One", sans-serif;
-}
+
 
 #free-tutorials div a:hover {
     color: #fb8209;
@@ -64,7 +61,8 @@ h3, h4 {
 #featured-title {
     background-color: #0a6bb1;
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 1em;
+    padding-top:1em;
 }
 .lower-content {
     padding:2em;

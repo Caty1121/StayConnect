@@ -1,3 +1,18 @@
 .not-the-header {
     padding-left: 2em;
+    text-align: center;
+
+}
+.img {
+    display: flex;
+    justify-content: center;
+}
+#contact {
+    padding-bottom: 1em;
+    padding-top: 1em;
+
+}
+
+#pq {
+    padding-top: 1em;
 }

@@ -1,3 +1,13 @@
 .not-the-header {
     padding-left: 2em;
 }
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 18px;
+    padding-top: .75em;
+    padding-left: 20em;
+    padding-bottom: .75em;
+    text-align: start;
+    font-weight: 500px;
+}
