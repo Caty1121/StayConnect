@@ -19,7 +19,6 @@ body {
     color: black;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 900;
     font-size: 15px;
 }
 body, ul {
@@ -31,13 +30,12 @@ h1 {
     font-size: 72px;
     margin-bottom: 0;
     margin-top: 0; 
-
 }
 header, footer {
     font-size: 20px;
 }
 #logo {
-    height: 8vh;
+    height: 10vh;
 }
 button {
     padding: 12px;
@@ -46,31 +44,33 @@ button {
     font-weight: 700;
     border-radius: 8px;
     border-style: none;
-    font: 25px;
-    font-size: 18px;
+    font-size: 16px;
 }
 button:hover {
     background-color: #ee448e;;
     color: #000;
+    padding: 12px;
+    border-radius: 8px;
 }
 nav {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     background-color:#fff;
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 1%;
 }
 button.login {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    background-color: #fb8209;
+    align-items: center;
+
 }
 button.login a {
     text-decoration: none;
-    background-color: #fb8209;
     color: #000;
 }
 .nav-list {
@@ -81,7 +81,6 @@ button.login a {
     padding-left: 20em;
     padding-bottom: .75em;
     text-align: start;
-    font-weight: 800px;
 }
 .nav-list a {
     text-decoration: none;
@@ -91,8 +90,10 @@ button.login a {
 .nav-list a:hover, button.login:hover, button.login a:hover {
     background-color: #ee448e;;
     color: #000;
-
-
+    border-radius: 8px;
+}
+.nav-list a:hover {
+    padding: 12px;
 }
 @media (max-width: 600px) {
     nav {
@@ -122,20 +123,11 @@ button.login a {
     max-width: 100%;
 }
 article, section {
-    font-weight: 600;
     font-size: 18px;
 }
-#gamer-ladies {
-    height:auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-}
+
 .call-to-action {
     font-weight: 300;
-    font-style: normal;
     font-style: normal;
     color: #FFF;
     padding-left: 8em;
@@ -145,6 +137,7 @@ article, section {
     background-color: #0a6bb1;
     display: flex;
 }
+
 .call-to-action h2 {
     font-size: 23px;
     margin-left: 1%;
@@ -153,10 +146,6 @@ article, section {
     padding: 1em 1em 1em 30em;
     justify-items: center;
     font-size: 24px;
-}
-.featured-content-list {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
 }
 .top-p-cta {
     margin-bottom: 0;
@@ -168,51 +157,51 @@ article, section {
 .bottom-p-cta {
     margin-top: 0;
 }
-.intro-home, .featured-content-list, 
-#digital-comp, .digital-comp-list {
+.featured-content-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     margin:0;
+    column-gap: 50px;
 }
-
-  .blog-latest
-#about {
-    text-align: center;
-}
-
-.call-button {
-    align-items: center;
-}
-
 section.main-content {
     padding: 0;
+    display: flex
 }
-
-.blog-latest {
-    background-color: #0a6bb1;
-    color:rgb(242, 245, 214);
-    font-size: 25px;
-    height: 35vh;
-    width:auto;
-    padding-top: 1em;
-    margin-left: 10%;
-    margin-right:10%; 
-    text-align: center;
+#gamer-ladies {
+    height: 350px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 5%;
 }
+ .intro-home, .intro-home-text {
+    flex: 1;
+ }
+ .intro-home {
+    justify-items: flex-end;
+ }
 
 .empowering {
-    margin-left: 15%;
-    padding-right: 10%;
-    max-width: 100vh;
+    padding-top: 50px;
+}
+.empowering-p {
+    width: 514px;
+    font-size: 20px;
+}
+.featured-content {
+    background-color: #0a6bb1;
+    color: #FFF;
 }
 .join-newsletter {
     text-align: center;
-    font-size: 20px;
 }
 .featured-content-title {
     text-align: center;
     font-size: 30px;
+    padding-top: 20px;
+    gap: 10px;
 }
 
