@@ -20,7 +20,7 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 15px;
 }
 body, ul {
     margin: 0;
@@ -28,7 +28,10 @@ body, ul {
     list-style-type: none;
 }
 h1 {
-    font-size:35px;;
+    font-size: 72px;
+    margin-bottom: 0;
+    margin-top: 0; 
+
 }
 header, footer {
     font-size: 20px;
@@ -37,26 +40,38 @@ header, footer {
     height: 8vh;
 }
 button {
-    padding: 1em;
+    padding: 12px;
     background-color: #fb8209;
-    color: black;
+    color: #000;
     font-weight: 700;
-    border-radius: 25px;
-    border-color: #f67606;
+    border-radius: 8px;
+    border-style: none;
     font: 25px;
     font-size: 18px;
 }
 button:hover {
-    background-color: var(--color-body)
+    background-color: #ee448e;;
+    color: #000;
 }
 nav {
     display: flex;
     justify-content:left;
-    opacity: .7;
-    background-color:#0b5deb;
+    background-color:#fff;
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+button.login {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+button.login a {
+    text-decoration: none;
+    background-color: #fb8209;
+    color: #000;
 }
 .nav-list {
     list-style-type: none;
@@ -71,16 +86,12 @@ nav {
 .nav-list a {
     text-decoration: none;
     transition: background-color 0.3s ease;
-    color: rgb(244, 225, 225);
+    color: #080708;
 }
-.nav-list a:hover {
-    background-color: #f67606;
-    color:black;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: .5em;
-    padding-bottom: .75em;
-    border-radius: 15px;
+.nav-list a:hover, button.login:hover, button.login a:hover {
+    background-color: #ee448e;;
+    color: #000;
+
 
 }
 @media (max-width: 600px) {
@@ -123,24 +134,39 @@ article, section {
     max-width: 100%;
 }
 .call-to-action {
-    font-family: "Rowdies", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-style: normal;
-    color: #151312;
+    color: #FFF;
     padding-left: 8em;
     padding-right: 10em;
     padding-bottom: 1em;
     padding-top: 1em;
-    background-color: #f4f6f3;
-    opacity: .8;
+    background-color: #0a6bb1;
+    display: flex;
 }
 .call-to-action h2 {
     font-size: 23px;
+    margin-left: 1%;
+}
+.cta-cont {
+    padding: 1em 1em 1em 30em;
+    justify-items: center;
+    font-size: 24px;
 }
 .featured-content-list {
     padding-left: 1.5em;
     padding-right: 1.5em;
+}
+.top-p-cta {
+    margin-bottom: 0;
+}
+.center-p-cta {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bottom-p-cta {
+    margin-top: 0;
 }
 .intro-home, .featured-content-list, 
 #digital-comp, .digital-comp-list {
@@ -150,9 +176,7 @@ article, section {
     text-align: center;
     margin:0;
 }
-.dcl-perks {
-    padding: 1em;
-}
+
   .blog-latest
 #about {
     text-align: center;
@@ -166,20 +190,6 @@ section.main-content {
     padding: 0;
 }
 
-.digital-comp-list {
-    background-color: #0a6bb1;
-    color:rgb(242, 245, 214);
-    font-size: 25px;
-    height: 45vh;
-    width:auto; 
-}
-#digital-comp  {
-    padding-top: 3em;
-    font-size: 30px;
-    color:rgb(242, 245, 214);
-    background-color: #0a6bb1;
-
-}
 .blog-latest {
     background-color: #0a6bb1;
     color:rgb(242, 245, 214);
@@ -203,7 +213,6 @@ section.main-content {
 }
 .featured-content-title {
     text-align: center;
-    font-family: "Poetsen One", sans-serif;
     font-size: 30px;
 }
 
