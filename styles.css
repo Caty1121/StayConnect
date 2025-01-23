@@ -69,6 +69,7 @@ button.login {
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
+    height:auto;
 }
 button.login a {
     text-decoration: none;
@@ -205,4 +206,33 @@ section.main-content {
     padding-top: 20px;
     gap: 10px;
 }
+.footer {
+    background-color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-social a img {
+    width: 24px;
+    margin-right: 10px;
+}
+.footer-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+.footer-links a:last-child {
+    margin-right: 0;
+}
+.footer-copyright {
+    color: black;
+    font-size: 14px;
+}
