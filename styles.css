@@ -37,6 +37,9 @@ header, footer {
 #logo {
     height: 10vh;
 }
+img {
+    border-radius: 12px;
+}
 button {
     padding: 12px;
     background-color: #fb8209;
@@ -113,6 +116,7 @@ button.login a {
     justify-content: center;
     align-items: center;
     max-width: 100%;
+    margin-bottom: 50px;
 }
 #internet,
 #waving, #scam, #privacy,
@@ -138,6 +142,7 @@ article, section {
     padding-top: 1em;
     background-color: #0a6bb1;
     display: flex;
+    max-height: 250px;
 }
 
 .call-to-action h2 {
