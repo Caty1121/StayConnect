@@ -64,6 +64,10 @@ nav {
     z-index: 1000;
     padding: 1%;
 }
+button a {
+    text-decoration: none;
+    color: #000;
+}
 button.login {
     display: flex;
     justify-content: flex-end;
@@ -73,6 +77,9 @@ button.login {
     padding-top: 0;
     padding-bottom: 0;
     height:auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 18px;
 }
 button.login a {
     text-decoration: none;

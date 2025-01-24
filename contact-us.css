@@ -1,0 +1,14 @@
+input {
+    border-radius: 8px;
+}
+.containerForm {
+    display:flex;
+    justify-self: center;
+    background-color: #fff;
+    opacity: .8;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 50px;
+    color:#000;
+    font-size: 20px;
+}

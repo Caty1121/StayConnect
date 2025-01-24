@@ -12,6 +12,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact-us.css">
+
 </head>
 <body>
     <header>
@@ -29,7 +31,7 @@
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
             <button class="login">
-                <a href="login-register.html">Login/Register</a>
+                <a href="login-register.html">Login | Register</a>
             </button>
         </nav>
     </header>
@@ -45,67 +47,32 @@
             <button class="call-to-action-button">Join Today</button>
         </div>
     </section>
-            <div class="container">         
+            <div class="containerForm">         
                 <form name="contactForm">
                     <h3>Contact Details</h3>
-                    <div class="contact_form_container">
-                        <div id="contact_sec_a">
+                    <br>
+                    <div class="contactFormContainer">
+                        <div id="contactSectA">
                             <div class="name_container">
                                 <label id="fName_label" for="fName">First Name</label>
-
                                 <input id="fName" name="fName" type="text"/>
-
-                                <label id="midInit_label" for="midInit">M</label>
-
-                                <input id="midInit" name="midInit" type="text"/>
-
                                 <label id="lName_label" for="lName">Last Name</label>
-
                                 <input id="lName" name="lName" type="text"/>
+                                <br>
+                                <br>
                             </div>
-                            <div class="phone_container">
+                            <div class="phoneEmailcontainer">
                                 <label id="phone_label">Phone Number</label>
                                 <input id="phone1" name="phone1"/>
-                                <p id="dash1">-</p>
-                                <input id="phone2" name="phone2"/>
-                                <p id="dash2">-</p>
-                                <input id="phone3" name="phone3"/>
-                            </div>
-                            <div class="phone_type_container">
-                                <label for="home">Home</label>
-                                <input type="radio" id="home" name="type" value="home">
-                                <label for="cell">Cell</label>
-                                <input type="radio" id="cell" name="type" value="cell">
-                                <label for="work">Work</label>
-                                <input type="radio" id="work" name="type" value="work">
-                            </div>
-                            <div class="email_container">
                                 <label for="email">Email Address</label>
                                 <input id="email" name="email" type="text"/>
                             </div>
+                            <br>
                         </div>
-                        <div id="contact_sec_b">
-                            <div class="address_container">
-                                <label id="address1_label" for="address1">Address 1</label>
-                                <input id="address1" name="address1" type="text"/>
-                                <label id="address2_label" for="address2">Address 2</label>
-                                <input id="address2" name="address2" type="text"/>
-                                <label id="city_label"for="city">City </label>
-                                <input id="city" name="city" type="text"/>
-                                <label id="state_label" for="state"> State</label>
-                                <select id="state" name="state">
-                                    <option disabled selected value="">Select</option>
-                                    <option value="MN">Minnesota</option>
-                                    <option value="TX">Texas</option>
-                                    <option value="KY">Kentuky</option>
-                                </select>
-                                <label id="zip_label" for="zip">Zipcode</label>
-                                <input id="zip" name="zip" type="text"/>
-                            </div>
-                        </div>
-                        <div id="contact_sec_c">
+                        <div id="contactSecB">
                             <div class="details_container">
-                                <label for="details">Special Details</label>
+                                <label for="details">Message</label>
+                                <br>
                                 <textarea id="details" name="details" rows="5" cols="100"></textarea>
                                 <div>
                                     <input type="checkbox" id="confirm" value="1"/>
@@ -114,7 +81,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button_container">
+                    <br>
+                    <div class="buttonContainer">
                         <button type="reset" class=" btn btn-muted">Cancel</button>
                         <button type="submit" class="btn btn-secondary">Submit</button>
                     </div>
