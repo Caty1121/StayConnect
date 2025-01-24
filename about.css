@@ -6,9 +6,9 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto; 
     gap: 20px;
-    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 #grid-contents img {
@@ -21,6 +21,7 @@
     height: 65vh;
     grid-column: 1 / 2; /* Position in the first column */
     grid-row: 1 / 2; /* Position in the first row */
+    max-height: 400px;
 }
 
 #mission-content {
@@ -32,7 +33,7 @@
 }
 
 #vr-lady {
-    max-height: 55vh;
+    max-height: 400px;
     grid-column: 1 / 2; /* Position in the first column */
     grid-row: 2 / 3; /* Position in the second row */
 }
@@ -48,6 +49,8 @@
 #team-image {
     grid-column: 1 / 2; /* Position in the first column */
     grid-row: 3 / 4; /* Position in the third row */
+    max-height: 400px;
+
 }
 
 #team {
@@ -57,19 +60,8 @@
     color:rgb(3, 3, 0);
     font-size: 25px;
 }
-.p-padding {
-    padding: .5em;
-}
-h4{
-    font-family: "Poetsen One", sans-serif;
-    font-size: 25px;
-    font-weight: 200;
-    font-style: normal;
-}
-.p-margin {
-    margin-left: 12%;
-    margin-right: 12%;
-}
+
+
 .why-section {
     padding-top: 2em;
     background-color: #0a6bb1;

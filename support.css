@@ -4,3 +4,15 @@
 dd {
     padding-bottom: 2em;
 }
+#support-main-content {
+    background-color: #fff;
+    opacity: .8;
+    padding: 50px;
+    margin: 50px 200px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    text-align: center;
+}
