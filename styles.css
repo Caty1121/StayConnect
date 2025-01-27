@@ -19,7 +19,7 @@ body {
     color: black;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-size: 15px;
+    font-size: 20px;
 }
 body, ul {
     margin: 0;
@@ -136,7 +136,7 @@ button.login a {
     max-width: 100%;
 }
 article, section {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .call-to-action {
@@ -199,7 +199,7 @@ section.main-content {
 }
 .empowering-p {
     width: 514px;
-    font-size: 20px;
+    font-size: 22px;
 }
 .featured-content {
     background-color: #0a6bb1;
