@@ -151,9 +151,7 @@ article, section {
     display: flex;
     max-height: 250px;
 }
-/*
- Hiding for Internal Users only
-*/
+/*Hiding for Internal Users only*/
 li#community {
     display:none;
 }
