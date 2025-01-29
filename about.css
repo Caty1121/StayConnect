@@ -1,3 +1,13 @@
+#desc {
+    font-size: 25px;
+    font-weight: 500;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
 #main-content-about {
     text-align: center;
 }
@@ -8,7 +18,8 @@
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 50px;
+    padding-left: 20px;
+    border-radius: 8px;
 }
 
 #grid-contents img {
@@ -30,6 +41,8 @@
     background-color: #0a6bb1;
     color:rgb(242, 245, 214);
     font-size: 25px;
+    padding-left: 20px;
+    border-radius: 8px;
 }
 
 #vr-lady {
@@ -44,6 +57,8 @@
     background-color: #7fc15d;
     color:rgb(3, 3, 0);
     font-size: 25px;
+    padding-left: 20px;
+    border-radius: 8px;
 }
 
 #team-image {
@@ -59,9 +74,9 @@
     background-color: #e66809;
     color:rgb(3, 3, 0);
     font-size: 25px;
+    padding-left: 20px;
+    border-radius: 8px;
 }
-
-
 .why-section {
     padding-top: 2em;
     background-color: #0a6bb1;
@@ -70,7 +85,6 @@
     height: 35vh;
     width:auto;
 }
-#desc {
-    padding-left: 3em;
-    padding-right: 3em;
+.footer {
+    margin-top: 5%;
 }
