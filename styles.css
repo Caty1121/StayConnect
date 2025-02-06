@@ -5,21 +5,25 @@
     --color-headings: #080708;
     --color-body: #ee448e;
     --color-body-darker: #24bdb0;
-    --color-border: #ccc;
+    --color-border: #F2D3A7;
     --border-radius: 30px;
   }
 body, html {
-    height: 100%; 
+    min-height: 300vh; 
     margin: 0; 
 }
+header, body, nav  {
+    overflow: visible;
+}
 body {
-    background-image: url("images/background.png");
+    background-image: url("images/parachute.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-size: 20px;
+    width: 100%;
 }
 body, ul {
     margin: 0;
@@ -34,8 +38,11 @@ h1 {
 header, footer {
     font-size: 20px;
 }
+header {
+    height: auto;
+}
 #logo {
-    height: 10vh;
+    height: 12vh;
 }
 img {
     border-radius: 12px;
@@ -50,7 +57,7 @@ button {
     font-size: 16px;
 }
 button:hover {
-    background-color: #ee448e;;
+    background-color: #ee448e;
     color: #000;
     padding: 12px;
     border-radius: 8px;
@@ -58,11 +65,12 @@ button:hover {
 nav {
     display: flex;
     justify-content: left;
-    background-color:#fff;
+    background-color:#0a6bb1;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 9999;
     padding: 1%;
+    box-shadow: 1px 1px 1px 1px#063d64ac;
 }
 button a {
     text-decoration: none;
@@ -80,6 +88,8 @@ button.login {
     padding-left: 24px;
     padding-right: 24px;
     font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px
 }
 button.login a {
     text-decoration: none;
@@ -88,10 +98,10 @@ button.login a {
 .nav-list {
     list-style-type: none;
     display: flex;
-    gap: 18px;
-    padding-top: .75em;
+    gap: 40px;
+    padding-top: .5em;
     padding-left: 20em;
-    padding-bottom: .75em;
+    padding-bottom: .5em;
     text-align: start;
 }
 .nav-list a {
@@ -140,24 +150,26 @@ article, section {
 }
 
 .call-to-action {
+    display: flex;
     font-weight: 300;
     font-style: normal;
-    color: #FFF;
+    color: #000;
     padding-left: 8em;
-    padding-right: 10em;
     padding-bottom: 1em;
     padding-top: 1em;
-    background-color: #0a6bb1;
-    display: flex;
+    background-color: #3bacd55d;
+
     max-height: 250px;
 }
 /*Hiding for Internal Users only*/
 li#community {
     display:none;
 }
+.call-to-action h1 {
+    margin-top: 20px;
+}
 .call-to-action h2 {
-    font-size: 23px;
-    padding-left: 20px;
+    font-size: 24px;
 }
 .cta-cont {
     padding: 1em 1em 1em 30em;
@@ -170,8 +182,7 @@ li#community {
     align-items: center;
     justify-content: center;
     text-align: left;
-    margin:0;
-    column-gap: 50px;
+    margin: 0;
 }
 section.main-content {
     padding: 0;
@@ -213,7 +224,7 @@ section.main-content {
     gap: 10px;
 }
 .footer {
-    background-color: #fff;
+    background-color:  #7fc15d;
     padding: 20px 0;
     margin-top: 20px;
 }
