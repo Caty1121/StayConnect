@@ -172,10 +172,10 @@ li#community {
     font-size: 24px;
 }
 .cta-cont {
-    padding: 1em 1em 1em 30em;
+    padding: 1em 1em 1em 10em;
     justify-items: center;
     font-size: 24px;
-    text-align: center;
+    text-align: left;
 }
 .featured-content-list {
     display: flex;
