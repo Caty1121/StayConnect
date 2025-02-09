@@ -16,7 +16,7 @@ header, body, nav  {
     overflow: visible;
 }
 body {
-    background-image: url("images/parachute.jpg");
+    background-color: #f8f5f0	;
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
@@ -80,7 +80,7 @@ button.login {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
-    background-color: #fb8209;
+    background-color: #ffdd57;
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
@@ -157,9 +157,13 @@ article, section {
     padding-left: 8em;
     padding-bottom: 1em;
     padding-top: 1em;
-    background-color: #3bacd55d;
-
+    background-color: #f09e5ad4;
     max-height: 250px;
+}
+
+.call-to-action button {
+    background-color: #ffdd57
+    ;
 }
 /*Hiding for Internal Users only*/
 li#community {
@@ -186,7 +190,8 @@ li#community {
 }
 section.main-content {
     padding: 0;
-    display: flex
+    display: flex;
+    padding-bottom: 2%;
 }
 #gamer-ladies {
     height: 350px;
@@ -211,8 +216,8 @@ section.main-content {
     font-size: 22px;
 }
 .featured-content {
-    background-color: #0a6bb1;
-    color: #FFF;
+    background-color: #ffe9c7;
+    color: #000;
 }
 .join-newsletter {
     text-align: center;
