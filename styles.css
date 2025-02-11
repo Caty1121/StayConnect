@@ -22,7 +22,7 @@ body {
     color: black;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-size: 20px;
+    font-size: 25px;
     width: 100%;
 }
 body, ul {
@@ -31,9 +31,12 @@ body, ul {
     list-style-type: none;
 }
 h1 {
-    font-size: 72px;
+    font-size: 80px;
     margin-bottom: 0;
     margin-top: 0; 
+}
+h2 {
+    font-size: 35px;    
 }
 header, footer {
     font-size: 20px;
@@ -43,6 +46,8 @@ header {
 }
 #logo {
     height: 12vh;
+    box-shadow: 2px 2px 5px hsl(225, 95%, 16%);
+
 }
 img {
     border-radius: 12px;
@@ -54,7 +59,7 @@ button {
     font-weight: 700;
     border-radius: 8px;
     border-style: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 button:hover {
     background-color: #ee448e;
@@ -70,7 +75,7 @@ nav {
     top: 0;
     z-index: 9999;
     padding: 1%;
-    box-shadow: 1px 1px 1px 1px#063d64ac;
+    box-shadow: 1px 1px 1px 1px#02082aac;
 }
 button a {
     text-decoration: none;
@@ -87,9 +92,11 @@ button.login {
     height:auto;
     padding-left: 24px;
     padding-right: 24px;
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 8px;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    box-shadow: 5px 5px 8px hsl(225, 79%, 19%);
+
 }
 button.login a {
     text-decoration: none;
@@ -101,13 +108,15 @@ button.login a {
     gap: 40px;
     padding-top: .5em;
     padding-left: 20em;
-    padding-bottom: .5em;
+    padding-top: 1em;
     text-align: start;
+    font-size: 30px;
+    font-weight: 600;
 }
 .nav-list a {
     text-decoration: none;
     transition: background-color 0.3s ease;
-    color: #080708;
+    color: #f8f5f0;
 }
 .nav-list a:hover, button.login:hover, button.login a:hover {
     background-color: #ee448e;;
@@ -134,6 +143,7 @@ button.login a {
     align-items: center;
     max-width: 100%;
     margin-bottom: 50px;
+    gap: 10px;
 }
 #internet,
 #waving, #scam, #privacy,
@@ -146,7 +156,7 @@ button.login a {
     max-width: 100%;
 }
 article, section {
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .call-to-action {
@@ -157,13 +167,15 @@ article, section {
     padding-left: 8em;
     padding-bottom: 1em;
     padding-top: 1em;
-    background-color: #f09e5ad4;
+    background-color: #fc9a4a;
     max-height: 250px;
 }
 
 .call-to-action button {
-    background-color: #ffdd57
-    ;
+    background-color: #ffdd57;
+    font-size: 20px;
+    padding: 14px;
+    box-shadow: 5px 5px 8px hsl(34, 94%, 28%);
 }
 /*Hiding for Internal Users only*/
 li#community {
@@ -172,14 +184,13 @@ li#community {
 .call-to-action h1 {
     margin-top: 20px;
 }
-.call-to-action h2 {
-    font-size: 24px;
-}
+
 .cta-cont {
+    margin-left: 20%;
     padding: 1em 1em 1em 10em;
     justify-items: center;
-    font-size: 24px;
-    text-align: left;
+    font-size: 30px;
+    text-align: center;
 }
 .featured-content-list {
     display: flex;
@@ -194,11 +205,11 @@ section.main-content {
     padding-bottom: 2%;
 }
 #gamer-ladies {
-    height: 350px;
-    width: 500px;
+    height: 550px;
+    width: 800px;
     display: flex;
     justify-content: flex-end;
-    margin-right: 50px;
+    margin-right: 100px;
     margin-top: 5%;
 }
  .intro-home, .intro-home-text {
