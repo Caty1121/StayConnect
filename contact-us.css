@@ -6,14 +6,15 @@ input {
     height: 30px;
 }
 .containerForm {
+    align-self: center;
+    width: 50%;
     display:flex;
-    justify-self: center;
-    background-color: #fff;
-    opacity: .8;
+    justify-content: center;
+    background-color:#ebedeb74;
     border-radius: 12px;
     padding: 50px;
     margin: 40px;
-    color:#000;
+    color:#080708;
     font-size: 25px;
     box-shadow: 3px 5px 5px #6f6e6e;
 }
