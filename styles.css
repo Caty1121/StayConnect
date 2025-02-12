@@ -10,21 +10,27 @@
   }
 body, html {
     min-height: 300vh; 
-    margin: 0; 
+    margin: 0;
 }
 header, body, nav  {
     overflow: visible;
 }
 body {
     background-color: #f8f5f0	;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: black;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-size: 25px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
+.content-wrapper {
+    flex-grow: 1;
+}
+
 body, ul {
     margin: 0;
     padding: 0;
@@ -42,10 +48,13 @@ header, footer {
     font-size: 20px;
 }
 header {
-    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    background-color: #0a6bb1; /* Match your header background color */
 }
 #logo {
-    height: 12vh;
+    height: 10vh;
     box-shadow: 2px 2px 5px hsl(225, 95%, 16%);
 
 }
@@ -54,7 +63,7 @@ img {
 }
 button {
     padding: 12px;
-    background-color: #fb8209;
+    background-color: #ffdd57;
     color: #000;
     font-weight: 700;
     border-radius: 8px;
@@ -76,6 +85,7 @@ nav {
     z-index: 9999;
     padding: 1%;
     box-shadow: 1px 1px 1px 1px#02082aac;
+    height:60px;
 }
 button a {
     text-decoration: none;
@@ -94,9 +104,8 @@ button.login {
     padding-right: 24px;
     font-size: 22px;
     margin-top: 8px;
-    margin-bottom: 8px;
-    box-shadow: 5px 5px 8px hsl(225, 79%, 19%);
-
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 8px hsl(225deg 19.79% 19.84%);
 }
 button.login a {
     text-decoration: none;
@@ -108,7 +117,6 @@ button.login a {
     gap: 40px;
     padding-top: .5em;
     padding-left: 20em;
-    padding-top: 1em;
     text-align: start;
     font-size: 30px;
     font-weight: 600;
@@ -143,7 +151,10 @@ button.login a {
     align-items: center;
     max-width: 100%;
     margin-bottom: 50px;
-    gap: 10px;
+
+}
+.featured-content-div {
+    margin:25px;
 }
 #internet,
 #waving, #scam, #privacy,
@@ -156,7 +167,7 @@ button.login a {
     max-width: 100%;
 }
 article, section {
-    font-size: 25px;
+    font-size: 28px;
 }
 
 .call-to-action {
@@ -240,7 +251,7 @@ section.main-content {
     gap: 10px;
 }
 .footer {
-    background-color:  #7fc15d;
+    background-color:  #080708;
     padding: 20px 0;
     margin-top: 20px;
 }
@@ -256,16 +267,17 @@ section.main-content {
 .footer-social a img {
     width: 24px;
     margin-right: 10px;
+    color: rgb(230, 229, 248);
 }
 .footer-links a {
     margin-right: 15px;
     text-decoration: none;
-    color: black;
+     color: rgb(230, 229, 248);
 }
 .footer-links a:last-child {
     margin-right: 0;
 }
 .footer-copyright {
-    color: black;
+    color: rgb(230, 229, 248);
     font-size: 14px;
 }
