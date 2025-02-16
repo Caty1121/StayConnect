@@ -56,7 +56,7 @@ header {
     background-color: #0a6bb1; /* Match your header background color */
 }
 #logo {
-    height: 10vh;
+    height: 6vh;
     box-shadow: 2px 2px 5px hsl(225, 95%, 16%);
 
 }
@@ -108,6 +108,9 @@ button.login {
     margin-top: 8px;
     margin-bottom: 10px;
     box-shadow: 5px 5px 8px hsl(225deg 19.79% 19.84%);
+}
+.login:hover{
+    background-color: #ee448e;
 }
 button.login a {
     text-decoration: none;
@@ -180,8 +183,12 @@ article, section {
     padding-left: 8em;
     padding-bottom: 1em;
     padding-top: 1em;
-    background-color: #fc9a4a;
+    background-color: #fda45a;
+    box-shadow: 5px 2px 8px hsl(34, 50%, 24%);
     max-height: 250px;
+}
+img {
+    box-shadow: 5px 2px 8px hsl(36, 2%, 45%)
 }
 
 .call-to-action button {
@@ -212,9 +219,9 @@ li#community {
     text-align: left;
     margin: 0;
 }
-section.main-content {
-    padding: 0;
+#main-content-home {
     display: flex;
+    padding: 0;
     padding-bottom: 2%;
 }
 #gamer-ladies {
@@ -240,8 +247,9 @@ section.main-content {
     font-size: 22px;
 }
 .featured-content {
-    background-color: #ffe9c7;
+    background-color: #e1e2dc;
     color: #080708;
+    box-shadow: 5px 2px 8px hsl(210, 2%, 20%)
 }
 
 .featured-content-title {
@@ -283,4 +291,13 @@ section.main-content {
 .footer-copyright {
     color: rgb(230, 229, 248);
     font-size: 14px;
+}
+#tech-contact-text {
+    margin-top: 170px;
+}
+#tech-contact-button {
+    box-shadow: 5px 2px 8px hsl(210, 2%, 20%)
+}
+.footer {
+    margin-top: 50px;
 }

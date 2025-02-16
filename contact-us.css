@@ -1,22 +1,31 @@
 input, textarea {
     border-radius: 8px;
-    border: 1px solid #b1b0b0;
+    border: 2px solid #eea616;
+    font-family: "Roboto Condensed", sans-serif;
 }
 input {
     height: 30px;
+    background-color: #062d48;
+}
+::placeholder {
+    color:#c9c2c2;
+}
+textarea {
+    background-color: #062d48;
 }
 .containerForm {
     align-self: center;
-    width: 50%;
+    width: 52%;
     display:flex;
     justify-content: center;
-    background-color:#ebedeb74;
+    background-color:#0a6bb1;
     border-radius: 12px;
     padding: 50px;
     margin: 40px;
     color:#080708;
     font-size: 25px;
     box-shadow: 3px 5px 5px #6f6e6e;
+    color: #fff;
 }
 .nameContainer, .contactSectB {
     display:flex;
@@ -32,7 +41,11 @@ input {
 .contact-us-header {
     text-align: center;
 }
-
+textarea, input {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
 .btn-muted {
     background-color: red;
     box-shadow: 5px 2px 5px #484747;
