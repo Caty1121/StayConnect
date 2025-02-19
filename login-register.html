@@ -40,52 +40,47 @@
                 <p>
                     Don't have an account yet?
                 </p>
-                <button class="call-to-action-button">Sign up here</button>
+                <button id="openModal" class="call-to-action-button">Sign up here</button>
             </div>
         </section>
         <section class="modal-1">
             <div id="registerModal" class="modal" >
                 <div class="modal-content">
-                    <span class="close">&times;</span>
+                    <span class="close" id="close">&times;</span>
                     <div id="step1" class="form-step active">
                         <h2>Register</h2>
                         <p>Enter your details</p>
                         <input type="text" placeholder="First Name">
-                        <br>
                         <input type="text" placeholder="Last Name">
-                        <br>
                         <input type="email" placeholder="Email">
-                        <br>
                         <input type="password" placeholder="Password">
-                        <br>
                         <input type="password" placeholder="Re-enter Password">
-                        <br>
-                        <button type="submit">Sign Up</button>
+                        <button id="nextStep1" type="button">Next</button>
                     </div>
                     <div id="step2" class="form-step">
                         <h2>Payment</h2>
                         <input type="text" id="cardNumber" placeholder="Card Number" required>
-                        <br>
                         <input type="text" id="expiration" placeholder="MM/YY" required>
-                        <br>
                         <input type="text" id="cvv" placeholder="CVV" required>
-                        <br>
-                        <button class="prev-btn" onclick="prevStep(2)">Back</button>
-                        <button class="next-btn" onclick="nextStep(2)">Confirm Payment</button>
-                    </div>        
+                        <div class="button-pair">
+                            <button id="prevStep2" class="prev-btn" type="button">Back</button>
+                            <button id="nextStep2" class="next-btn" type="button">Confirm Payment</button>
+                        </div>
+                    </div>
                     <div id="step3" class="form-step">
                         <h2>Registration Complete</h2>
                         <p>Welcome to StayConnect!</p>
-                        <button onclick="closeModal()">Close</button>
+                        <button id="closeModal" type="button">Close</button>
                     </div>
                 </div>
             </div>
         </section>
+        <!--Include ForgotPassword Model here -->
         <section id="log-in-form" class="main-content">
         <img id="join-us" src="images\about-us-join-our-community.png" alt="Join Our Community">
-            <div>
+            <div class="login-text">
                 <br>
-            <h1 class="title">Login</h1>
+                <h1 class="title">Login</h1>
                 <p>Enter your login information below.
                 </p>
                 <form>
@@ -99,8 +94,8 @@
                         <button type="submit" id="log-in" class="call-buton">Login</button>
                     </div>
                     <div class="reset">
-                        <p><a href="forgot-password.html" class="form-link">Forgot your password? Reset here</a></p>
-                        <p><a href="signup.html" class="form-link">Don't have an account? Sign Up</a></p>
+                        <p><a id="forgot-password" class="form-link">Reset Password</a></p>
+                        <p><a id="reg-link" class="form-link">Register</a></p>
                     </div>
                 </div>    
                 </form>
@@ -124,6 +119,7 @@
                 ©2025 StayConnect
             </div>
         </div>
-    </footer>   
+    </footer>
+    <script src="script.js"></script>   
 </body>
 </html>

@@ -13,17 +13,19 @@
     padding-right:1%;
     width: 46%;
     color: #fff;
+    box-shadow: 5px 3px 8px hsl(210, 2%, 20%)
+}
+.login-text {
+    padding-right: 80px;
 }
 #join-us {
-    height: 75vh;
+    height: 70vh;
     width: auto;
     justify-content: center;
     align-items: center;
     max-width: 100%;
 }
-p {
-    padding-left: 2em;
-}
+
 input {
     background-color: #062d48;
     height: 35px;
@@ -48,36 +50,34 @@ input {
 .reset {
     padding-right: 1em;
 }
-img {
-    height: 950px;
+
+img#join-us {
+    margin-right: 75px;
+    box-shadow: none;
 }
 section.main-content {
     padding-bottom: 0;
-    width: 936px;
+    width: 450px;
 }
 
-/* Sign up Model */
 .form-step {
-    display: none; /* Initially hide all steps */
+  display: none; 
 }
+
 .modal {
-    display: none;
-    margin-top: 25px;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     align-content: center;
+    z-index: 1000;
 }
-
-/* Modal Content */
 .modal-content {
-    display: none;
     background-color: #fff;
     padding: 20px;
     width: 50%;
@@ -85,7 +85,12 @@ section.main-content {
     border-radius: 10px;
     text-align: center;
 }
-
+.enter-details-para {
+    text-align: center;
+}
+#nextStep2 {
+    background-color: #7fc15d;
+}
 .close {
     float: right;
     font-size: 24px;
@@ -94,13 +99,13 @@ section.main-content {
 .modal-1 input {
     margin: 10px;
 }
-
-
 #step1, #step2, #step3 {
     display:none;
+    flex-direction: column;
+    align-items: center;
 }
 .form-step.active {
-    display: block;
+    display: flex !important;
 }
 .modal input {
     width: 80%;
@@ -122,8 +127,16 @@ section.main-content {
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
-}
+    box-shadow: 5px 2px 5px #a9a7a7;
+    margin: 20px;
 
-.modal button:hover {
+}
+button#openModal:hover, .modal button:hover {
     background-color: #ee448e;
+}
+button#log-in {
+    box-shadow: 5px 2px 5px #3e3e3e;
+}
+a#reg-link:hover, a#forgot-password:hover {
+    color: #ee448e;
 }
