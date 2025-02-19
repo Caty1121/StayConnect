@@ -52,8 +52,8 @@ header, footer {
 header {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure it stays above other content */
-    background-color: #0a6bb1; /* Match your header background color */
+    z-index: 1000; 
+    background-color: #0a6bb1; 
 }
 #logo {
     height: 6vh;

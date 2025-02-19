@@ -1,21 +1,27 @@
 input, textarea {
+    background-color: #062d48;
+    height: 35px;
+    font-size: 25px;
     border-radius: 8px;
+    color: #f8f5f0;
+    text-align: center;
     border: 2px solid #eea616;
-    font-family: "Roboto Condensed", sans-serif;
 }
 input {
-    height: 30px;
-    background-color: #062d48;
+    width: 350px;
+    justify-self:center;
 }
 ::placeholder {
     color:#c9c2c2;
+    font-family: "Roboto Condensed", sans-serif;
+
 }
 textarea {
-    background-color: #062d48;
+    height:150px;
 }
 .containerForm {
     align-self: center;
-    width: 52%;
+    width: 48%;
     display:flex;
     justify-content: center;
     background-color:#0a6bb1;
