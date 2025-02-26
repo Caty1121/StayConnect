@@ -45,17 +45,22 @@
         </section>
         <section class="modal-1">
             <div id="registerModal" class="modal" >
-                <div class="modal-content">
+                <div id="modal-content">
                     <span class="close" id="close">&times;</span>
                     <div id="step1" class="form-step active">
                         <h2>Register</h2>
                         <p>Enter your details</p>
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                        <input type="password" placeholder="Re-enter Password">
-                        <button id="nextStep1" type="button">Next</button>
+                        <div>
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                            <input type="email" placeholder="Email">
+                            <input type="phone" placeholder="Phone">
+                        <div>
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Re-enter Password">
+                        </div>
+                            <button id="nextStep1" type="button">Next</button>
                     </div>
                     <div id="step2" class="form-step">
                         <h2>Payment</h2>
@@ -76,6 +81,38 @@
             </div>
         </section>
         <!--Include ForgotPassword Model here -->
+        <section class="modal-2">
+            <div id="passwordModal" class="modal2" >
+                <div id="modal-content2" class="modal-content">
+                    <span class="close" id="close">&times;</span>
+                    <div id="password-step1" class="form-step-2 active">
+                        <h2>Reset Password</h2>
+                        <p>Confirm Your Email Id</p>
+                        <input type="text" id="email-confirm" placeholder="email" required>
+                        <button id="pwNextStep1" type="button">Next</button>
+                    </div>
+                    <div id="password-step2" class="form-step-2">
+                        <h2>Reset Password</h2>
+                        <p>Confirm Your Phone Number</p>
+                        <input type="text" id="phone-confirm" placeholder="000-867-5309" required>
+                        <div class="button-pair">
+                            <button id="pwPrevStep2" class="prev-btn" type="button">Back</button>
+                            <button id="pwResetSubmit" class="next-btn" type="button">Submit</button>
+                        </div>
+                    </div>
+                    <div id="confirm-pw" class="hidden">
+                        <h2>Confirming Details</h2>
+                        <p>We appreciate your patience!</p>
+                    </div>
+                    <div id="password-step3" class="form-step">
+                        <h2>User Info Confirmed</h2>
+                        <p>Enter a Unique Password.</p>
+                        <p>Must be 8 characters long, contain a number, and symbol</p>
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Re-enter Password">
+                        <button id="closeModal" type="button">Close</button>
+                    </div>
+        </section>
         <section id="log-in-form" class="main-content">
         <img id="join-us" src="images\about-us-join-our-community.png" alt="Join Our Community">
             <div class="login-text">
@@ -94,8 +131,8 @@
                         <button type="submit" id="log-in" class="call-buton">Login</button>
                     </div>
                     <div class="reset">
-                        <p><a id="forgot-password" class="form-link">Reset Password</a></p>
-                        <p><a id="reg-link" class="form-link">Register</a></p>
+                        <p><a id="forgot-password" class="pw-form-link">Forgot Password</a></p>
+                        <p><a id="register" class="form-link">Register</a></p>
                     </div>
                 </div>    
                 </form>

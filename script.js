@@ -1,76 +1,106 @@
 document.addEventListener('DOMContentLoaded', function() {
   console.log("DOM fully loaded and parsed");
-  const modal = document.getElementById('registerModal');
-  const openModalBtn = document.getElementById('openModal');
-  const regLink = document.getElementById('reg-link');
-  const closeModalBtn = document.getElementById('closeModal');
-  const close = document.getElementById('close');
-  const steps = document.querySelectorAll('.form-step');
-  const nextStep1Btn = document.getElementById('nextStep1');
-  const prevStep2Btn = document.getElementById('prevStep2');
-  const nextStep2Btn = document.getElementById('nextStep2');
 
-  console.log("Elements selected:", { modal, openModalBtn, closeModalBtn, steps, nextStep1Btn, prevStep2Btn, nextStep2Btn });
+  // Modal elements
+  const modals = {
+      register: document.getElementById('registerModal'),
+      password: document.getElementById('passwordModal')
+  };
 
-  let currentStep = 1;
+  const registerLink = document.getElementById('register'); 
 
-  function showStep(step) {
-    console.log("Showing step:", step);
-      steps.forEach((stepElement, index) => {
-          if (index + 1 === step) {
-              stepElement.classList.add('active');
-          } else {
-              stepElement.classList.remove('active');
-          }
+  // Buttons to open modals
+  const openModalBtns = {
+      register: document.getElementById('openModal'),
+      password: document.getElementById('forgot-password') // Forgot password link
+  };
+
+  // Close buttons
+  const closeBtns = document.querySelectorAll('.close');
+  const closeModalFinalBtns = document.querySelectorAll('#closeModal');
+
+  // Form steps
+  const steps = document.querySelectorAll('.form-step'); // Registration steps
+  const passwordSteps = document.querySelectorAll('.form-step-2'); // Password reset steps
+  const confirmDetailsDiv = document.getElementById('confirm-pw'); // Confirmation div
+
+  let currentStep = {
+      register: 1,
+      password: 1
+  };
+
+  function showStep(modalType, step) {
+      const stepsGroup = modalType === 'register' ? steps : passwordSteps;
+      stepsGroup.forEach((stepElement, index) => {
+          stepElement.classList.toggle('active', index + 1 === step);
       });
+      currentStep[modalType] = step;
   }
 
-  openModalBtn.addEventListener('click', () => {
-    console.log("Open modal button clicked");
-      modal.style.display = 'flex';
-      console.log("Modal display property:", modal.style.display);
-      showStep(1);
+  // Open modal function
+  function openModal(modalType) {
+      modals[modalType].style.display = 'flex';
+      showStep(modalType, 1); // Start at the first step
+      if (modalType === 'password') {
+        confirmDetailsDiv.style.display = 'none'; // Ensure it's hidden when modal opens
+    }
+  }
+
+  // Close modal function
+  function closeModal(modalType) {
+      modals[modalType].style.display = 'none';
+  }
+
+  // Event listeners for opening modals
+  openModalBtns.register.addEventListener('click', () => openModal('register'));
+  openModalBtns.password.addEventListener('click', () => openModal('password'));
+
+  registerLink.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default link behavior
+    openModal('register');
+});
+
+  // Event listeners for closing modals
+  closeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+          Object.keys(modals).forEach(modal => closeModal(modal));
+      });
   });
 
-  regLink.addEventListener('click', () => {
-    console.log("Open modal reg-link clicked");
-      modal.style.display = 'flex';
-      console.log("Modal display property:", modal.style.display);
-      showStep(1);
+  closeModalFinalBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+          Object.keys(modals).forEach(modal => closeModal(modal));
+      });
   });
 
-  closeModalBtn.addEventListener('click', () => {
-    console.log("Close modal button clicked");
-    modal.style.display = 'none';
-  });
-  
-  close.addEventListener('click', () => {
-    console.log("Close x button clicked");
-    modal.style.display = 'none';
-  });
+  // Navigation for Registration Modal
+  document.getElementById('nextStep1').addEventListener('click', () => showStep('register', 2));
+  document.getElementById('prevStep2').addEventListener('click', () => showStep('register', 1));
+  document.getElementById('nextStep2').addEventListener('click', () => showStep('register', 3));
 
-  nextStep1Btn.addEventListener('click', () => {
-    console.log("Next step 1 button clicked");
-    currentStep = 2;
-      showStep(currentStep);
-  });
+  // Navigation for Forgot Password Modal
+  document.getElementById('pwNextStep1').addEventListener('click', () => showStep('password', 2));
+  document.getElementById('pwPrevStep2').addEventListener('click', () => showStep('password', 1));
 
-  prevStep2Btn.addEventListener('click', () => {
-    console.log("Previous step 2 button clicked");
-    currentStep = 1;
-      showStep(currentStep);
-  });
-
-  nextStep2Btn.addEventListener('click', () => {
-    console.log("Next step 2 button clicked");
-    currentStep = 3;
-      showStep(currentStep);
-  });
-
+  // Handle clicking outside the modal to close it
   window.addEventListener('click', (event) => {
-      if (event.target === modal) {
-        console.log("Modal background clicked");
-        modal.style.display = 'none';
-      }
+      Object.keys(modals).forEach(modal => {
+          if (event.target === modals[modal]) {
+              closeModal(modal);
+          }
+      });
   });
+
+  document.getElementById('pwResetSubmit').addEventListener('click', () => {
+    console.log("Submit button clicked. Showing confirmation message.");
+
+    // Hide Step 2 and Show Confirming Details
+    document.getElementById('password-step2').classList.remove('active');
+    document.getElementById('password-step2').style.display = 'none'; // Ensures step 2 disappears
+
+    confirmDetailsDiv.style.display = 'block'; // Ensures confirmation message appears
+});
+
+
+  console.log("Event listeners set up successfully.");
 });
