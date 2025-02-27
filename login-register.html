@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="login-register.css">
 </head>
@@ -102,6 +103,9 @@
                     </div>
                     <div id="confirm-pw" class="hidden">
                         <h2>Confirming Details</h2>
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
                         <p>We appreciate your patience!</p>
                     </div>
                     <div id="password-step3" class="form-step">
@@ -131,8 +135,8 @@
                         <button type="submit" id="log-in" class="call-buton">Login</button>
                     </div>
                     <div class="reset">
-                        <p><a id="forgot-password" class="pw-form-link">Forgot Password</a></p>
                         <p><a id="register" class="form-link">Register</a></p>
+                        <p><a id="forgot-password" class="pw-form-link">Forgot Password</a></p>
                     </div>
                 </div>    
                 </form>

@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore our tech tutorials designed to help seniors learn how to use popular apps and websites. StayConnect provides easy-to-follow guides for all your digital needs.">
-    <meta name="keywords" content="tech tutorials for seniors, senior technology education, digital literacy tutorials, StayConnect tutorials, how-to guides for seniors, learning technology">
+    <meta name="keywords" content="tech tutorials for all ages, senior technology education, digital literacy tutorials, StayConnect tutorials, how-to guides for seniors, learning technology">
     <title>StayConnect</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="tech.css">
 </head>
 <body>
     <header> 
         <nav>
             <div>
-                <img id="logo" src="images\logo.png" alt="logo">
+                <img id="logo" src="images/logo.png" alt="logo">
             </div> 
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
@@ -30,58 +29,55 @@
                 <li><a href="support.html">FAQ</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
-            <button class="login">
-                <a href="login-register.html">Login | Register</a>
-            </button>
+            <button id="nav-button" class="call-to-action-button" onclick="window.location.href='login-register.html'">Login | Register</button>
         </nav>
     </header>
-    <section class="call-to-action">
-        <div>
-            <h1 class="welcome">StayConnect</h1> 
-            <h2 class="cta-subheader">Tech Tutorials</h2>
-        </div>
-        <div class="cta-cont">
-            <p>
-                Looking for more learning? <br>
-                Join our community for unlimited access to Tech Tutorials.
-            </p>        
-            <button class="call-to-action-button">
-                <a href="login-register.html">Join Today</a>
-            </button>
-        </div>
-    </section>
-    <section class="main-content">
-        <div id="tech-cta">
-        <img id="typing" src="images\tech-tutorials-using-the-internet.jpg" alt="Friends computing">
-        <br>
-        <h2>Learn at Your Own Pace</h2>
-            <p>
-            Welcome to the Tech Tutorials section of StayConnect! Here, you will find step-by-step guides on using popular apps and websites. Our tutorials are designed to be easy to follow and understand, helping you to become more confident in your digital skills 
-            </p>
-        </div>
-        <br>
-
-        <div id="free-tutorials">
-            <div class="row">
-                <h2 id="featured-title"> Free Featured Learning</h2>
-                <div class="column">
-                    <a href="email-tutorial.html"><h4>Email Tutorial</h4></a>
-                    <p>Learn how to set up an email account today.</p>
-                </div>
-                <div class="column">
-                    <a href="browsers.html"><h4>What are browsers and Which Should I Use?</h4></a>
-                    <p>Learn what a browsers to use when exploring the internet</p>
-                </div>
-                <div class="column">
-                    <a href="socialmedia.html"><h4>Social Media Basics</h4></a>
-                    <p>Learn about which social media apps are suitable to your interest</p>
-                </div>    
+    <div class="content-wrapper">
+        <section class="call-to-action">
+            <div>
+                <h1 class="welcome">StayConnect</h1> 
+                <h2 class="cta-subheader">Tech Tutorials</h2>
             </div>
-        </div>    
-    </section>
+            <div class="cta-cont">
+                <p> Looking for more learning? 
+                <br> Join our community for unlimited access to Tech Tutorials.
+                </p>        
+                <button class="call-to-action-button">
+                    <a href="login-register.html">Join Today</a>
+                </button>
+            </div>
+        </section>
+        <section class="main-content">
+            <div id="tech-cta">
+                <img id="typing" src="images/tech-tutorials-using-the-internet.jpg" alt="Friends computing">
+                <br>
+                <h2>Learn at Your Own Pace</h2>
+                    <p>
+                    Welcome to the Tech Tutorials section of StayConnect! Here, you will find step-by-step guides on using popular apps and websites. Our tutorials are designed to be easy to follow and understand, helping you to become more confident in your digital skills 
+                    </p>
+            </div>
+            <br>
+            <div id="free-tutorials">
+                <div class="row">
+                    <h2 id="featured-title"> Free Featured Learning</h2>
+                    <div class="column">
+                        <a href="email-tutorial.html"><h4>Email Tutorial</h4></a>
+                        <p>Learn how to set up an email account today.</p>
+                    </div>
+                    <div class="column">
+                        <a href="browsers.html"><h4>What are browsers and Which Should I Use?</h4></a>
+                        <p>Learn what a browsers to use when exploring the internet</p>
+                    </div>
+                    <div class="column">
+                        <a href="socialmedia.html"><h4>Social Media Basics</h4></a>
+                        <p>Learn about which social media apps are suitable to your interest</p>
+                    </div>    
+                </div>
+            </div>    
+        </section>
         <div class="lower-content">
             <div class="waving">
-                <img src="images\tech-tutorials-video-chat-apps.jpg" alt="Couple Waving">
+                <img src="images/tech-tutorials-video-chat-apps.jpg" alt="Couple Waving">
             </div>
             <div id="tech-contact-text">
                 <h4>QUESTIONS?
@@ -95,7 +91,7 @@
                 <br>
                 <button id="tech-contact-button">Contact Us</button> 
             </div>
-        </div>    
+        </div>
     </div>
     <footer class="footer">
         <div class="footer-container">
