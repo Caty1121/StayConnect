@@ -48,36 +48,38 @@
             <div id="registerModal" class="modal" >
                 <div id="modal-content">
                     <span class="close" id="close">&times;</span>
-                    <div id="step1" class="form-step active">
-                        <h2>Register</h2>
-                        <p>Enter your details</p>
-                        <div>
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
+                    <form action="http://localhost:8001/register_user" method="POST" id="registrationForm">
+                        <div id="step1" class="form-step active">
+                            <h2>Register</h2>
+                            <p>Enter your details</p>
+                            <div>
+                                <input type="text" name="first_name"  placeholder="First Name">
+                                <input type="text" name="last_name" placeholder="Last Name">
+                            </div>
+                                <input type="email" name="email" placeholder="Email">
+                                <input type="phone" name="phone" placeholder="Phone">
+                            <div>
+                                <input type="password" name="password" placeholder="Password">
+                                <input type="password" name="confirm_password" placeholder="Re-enter Password">
+                            </div>
+                                <button id="nextStep1" type="button">Next</button>
                         </div>
-                            <input type="email" placeholder="Email">
-                            <input type="phone" placeholder="Phone">
-                        <div>
-                            <input type="password" placeholder="Password">
-                            <input type="password" placeholder="Re-enter Password">
+                        <div id="step2" class="form-step">
+                            <h2>Payment</h2>
+                            <input type="text" id="cardNumber" name="card_number" placeholder="Card Number" required>
+                            <input type="text" id="expiration" name="expiration" placeholder="MM/YY" required>
+                            <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                            <div class="button-pair">
+                                <button id="prevStep2" class="prev-btn" type="button">Back</button>
+                                <button id="nextStep2" class="next-btn" type="submit">Confirm Payment</button>
+                            </div>
                         </div>
-                            <button id="nextStep1" type="button">Next</button>
-                    </div>
-                    <div id="step2" class="form-step">
-                        <h2>Payment</h2>
-                        <input type="text" id="cardNumber" placeholder="Card Number" required>
-                        <input type="text" id="expiration" placeholder="MM/YY" required>
-                        <input type="text" id="cvv" placeholder="CVV" required>
-                        <div class="button-pair">
-                            <button id="prevStep2" class="prev-btn" type="button">Back</button>
-                            <button id="nextStep2" class="next-btn" type="button">Confirm Payment</button>
+                        <div id="step3" class="form-step">
+                            <h2>Registration Complete</h2>
+                            <p>Welcome to StayConnect!</p>
+                            <button id="closeModal" type="button">Close</button>
                         </div>
-                    </div>
-                    <div id="step3" class="form-step">
-                        <h2>Registration Complete</h2>
-                        <p>Welcome to StayConnect!</p>
-                        <button id="closeModal" type="button">Close</button>
-                    </div>
+                    </form>    
                 </div>
             </div>
         </section>

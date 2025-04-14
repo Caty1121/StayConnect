@@ -68,7 +68,7 @@ button {
     background-color: #ffdd57;
     color: #080708;
     font-weight: 700;
-    border-radius: 8px;
+    border-radius: 10px;
     border-style: none;
     font-size: 18px;
     box-shadow: 5px 5px 8px hsl(225deg 19.79% 19.84%);
@@ -181,7 +181,7 @@ article, section {
     padding-left: 8em;
     padding-bottom: 1em;
     padding-top: 1em;
-    background-color: #fda45a;
+    background-color: #ed904e;
     box-shadow: 5px 2px 8px hsl(34, 50%, 24%);
     max-height: 250px;
 }
